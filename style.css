@@ -1,0 +1,141 @@
+body {
+    padding: 20px; /* Sesuaikan dengan nilai padding yang Anda inginkan */
+    margin: auto;
+    width: fit-content; /* Agar konten hanya mengikuti lebar yang diperlukan */
+    background-color: lightseagreen;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%; /* Lebar kontainer menjadi lebih besar untuk layar kecil */
+    }
+}
+
+.input-row {
+    display: flex; /* Menggunakan tata letak flexbox */
+}
+
+.input-section {
+    flex: 1; /* Memanjangkan kolom agar menempati ruang yang tersedia */
+    margin-right: 10px; /* Memberikan jarak antar kolom */
+}
+
+.input-section:last-child {
+    margin-right: 0; /* Menghilangkan margin kanan dari kolom terakhir */
+}
+
+.Navigation-Bar {
+    display: flex;
+    justify-content: center; /* Meletakkan konten di tengah secara horizontal */
+    align-items: center; /* Meletakkan konten di tengah secara vertikal */
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prolog {
+    width: 1050px;
+}
+.Logo{
+    height: min-content;
+    margin-top: 0;
+    text-align: center; /* Mengatur teks ke tengah */
+}
+
+#Navigation {
+    display: flex;
+}
+
+#Navigation>a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+#Navigation:hover {
+    color: red;
+}
+
+/*Input Section*/
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-field {
+    outline: none;
+    border-radius: 8px;
+    border: solid black;
+    padding: 10px 10px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#input-field:focus {
+    border: solid blue;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#result-field {
+    outline: none;
+    border-radius: 8px;
+    border: solid black;
+    padding: 10px 10px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#result-field:focus {
+    border: solid blue;
+}
+
+.keterangan-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#keterangan-field {
+    outline: none;
+    border-radius: 8px;
+    border: solid black;
+    padding: 10px 10px;
+    width: 1050px;
+    margin-bottom: 10px;
+}
+
+#keterangan-field:focus {
+    border: solid blue;
+}
+
+.my-button {
+    background-color: rgb(5, 92, 92);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 178px;
+    width: 350px;
+    justify-content: space-between; /* Mengatur jarak antara tombol */
+    text-align: center; /* Mengatur teks ke tengah */
+    line-height: normal; /* Mengatur ketinggian baris agar teks berada di tengah */
+}
+
+.my-button:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+.my-button:active {
+    background-color:rgb(4, 40, 40);
+    transform: translateY(2px);
+}
+
+h4 {
+    border-bottom: 1px solid black;
+}
+
+#pesanError {
+    font-size: 18px;
+    font-weight: bold;
+}
